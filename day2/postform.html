@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <script>
+        function handleSubmit(event) {
+           event.previousDefault();
+           const formData = new FormData(event,target);
+           const Data = Object.fromEntries(formData);
+           console.log(Data) 
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form  action="homepage.html" method="post" onsubmit="handlesubmit(event)">/
+    <!-- <form method="post" onsubmit="handlesubmit(event)"> -->
+     <label for="username">username:</label>
+     <br>
+     <input type="text" placeholder="username">
+     <br>
+     <label for="Email">email:</label>
+     <input type="text" id="email" name="email" required>
+     </label>
+     <label for="password">password
+     <br>
+     <input type="password" placeholder="password"> 
+     </label>
+     <br>
+     <label for="phone">phone number</label>
+     <input type="tel" id="phone" name="phone" value="1234-5678">
+     <br>
+     <!-- <input type="hidden" id="hide" name="hidden" value="3487"> -->
+     <label for="DOB">DOB</label>
+     <input type="text" id="DOB" name="DOB" required>
+     <button type="submit">Login</button>
+     <h2>Gender</h2>
+     <br>
+     <label for="male">male</label>
+     <input type="radio" name="male">
+     <br>
+     <label for="female">female</label>
+     <input type="radio" name="female">
+     <br>
+     <button type="submit">submit</button>
+     <br>
+     <button type="submit">reset</button>
+    </form>
+</body>
+</html>
