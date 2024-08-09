@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleSubmit(event) {
+            event.previousDefault();
+            const formData = new FormData(event, target);
+            const Data = Object.fromEntries(formData);
+            console.log(Data);
+        }
+    </script>
+    <style>
+        #main {
+            color: rgba(0, 0, 255, 0.33);
+        }
+
+        .info {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            background-color: beige;
+        }
+
+        a {
+            size: 20px;
+            color: brown;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="main">RESUME</h1>
+    <div>
+
+        Name :Muskan GUPTA
+        <p class="info">
+            I am current pursuing btech from gla university mathura
+        </p>
+        <p2>
+            i have doing my schooling from saraswati vidhya mandir
+        </p2>
+        <br>
+        MY SKILLs
+        <ul>
+            <li>c</li>
+            <li>python</li>
+            <li>java</li>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa dolores quaerat alias deleniti, fugit
+                accusantium quisquam in illum itaque. Neque, explicabo adipisci velit blanditiis maiores esse sit
+                quis ratione eius.</p>
+
+            <a href="C:\Users\ruchi\OneDrive\Documents\stack\contact.html">contact me</a>
+
+
+    </div>
+</body>
+
+</html>
+
+
+resume
