@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handlegoback(event) {
+            event.previousDefault();
+            const formData = new FormData(event, target);
+            const Data = Object.fromEntries(formData);
+            console.log(Data);
+        }
+
+    </script>
+</head>
+
+<body>
+    the form should be here
+    <form action="resume.html" method="post" onsubmit="handlegoback(event)">
+        <label for="contactno." id="contact" required></label>
+        <input type="text" placeholder="contactno">
+        <br>
+        <button type="register">register</button>
+        <br>
+        <button type="goback">goback</button>
+    </form>
+</body>
+
+</html>
+
+
+
+contact
